@@ -15,7 +15,7 @@ if sys.argv > 1:
 
 	if sys.argv[1].find('TH-Upgrade') >= 0:
 		fp = open("upgrade_onl_template.xml","r")
-		fw = open("upgrade_onl.xml","w")
+		fw = open("upgrade_onl.xml","w+")
 		while True:
 			line = fp.readline()
 			if not line:
@@ -26,6 +26,7 @@ if sys.argv > 1:
 				fw.write(line)
 		fp.close()
 		fw.close()
+		print("new file created")
 		#os.system("./netconf-console --host {} --port 830 -u root -p arrcus --rpc upgrade_onl.xml".format(host_ip))
 		os.system("pwd")
 		print("Test Harness:Upgrade Switches listed in second argument")
