@@ -1,0 +1,4 @@
+<request-software-install xmlns="http://yang.arrcus.com/arcos/system">
+  <package-name>http://10.9.195.14:7777/2020_06_25/ArcOS_v4.1.1.EFT6/ONL/ARCOS-ArcOS_v4.1.1.EFT6_ONL-OS_2020-06-26.0221-7f9bfa0_AMD64_INSTALLED_INSTALLER</package-name>
+  <source-interface>ma1</source-interface>
+</request-software-install>
