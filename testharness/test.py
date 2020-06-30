@@ -20,7 +20,7 @@ if sys.argv > 1:
 		for line in data: 
 			if line.find("package-name") >= 0:
 				fw.write("<package-name>{}</package-name>".format(bin_url))
-			else
+			else:
 				fw.write(line)
 		fp.close()
 		fw.close()
