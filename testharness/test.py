@@ -1,5 +1,5 @@
 import sys 
-  
+#POC file to route actions based on git commit comments  
 if sys.argv == 1:
 	return
 
