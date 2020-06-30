@@ -16,8 +16,10 @@ if sys.argv > 1:
 	if sys.argv[1].find('TH-Upgrade') >= 0:
 		fp = open("upgrade_onl_template.xml","r")
 		fw = open("upgrade_onl.xml","w")
-		data = fp.readlines()
-		for line in data: 
+		while True:
+			line = fp.readline()
+			if not line:
+				break
 			if line.find("package-name") >= 0:
 				fw.write("<package-name>{}</package-name>".format(bin_url))
 			else:
