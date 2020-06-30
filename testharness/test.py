@@ -21,13 +21,13 @@ if sys.argv > 1:
 			if not line:
 				break
 			if line.find("package-name") >= 0:
-				fw.write("<package-name>{}</package-name>".format(bin_url))
+				fw.write("<package-name>{}</package-name>\n".format(bin_url))
 			else:
 				fw.write(line)
 		fp.close()
 		fw.close()
 		print("new file created")
-		#os.system("./netconf-console --host {} --port 830 -u root -p arrcus --rpc upgrade_onl.xml".format(host_ip))
+		os.system("./netconf-console --host {} --port 830 -u root -p arrcus --rpc upgrade_onl.xml".format(host_ip))
 		os.system("pwd")
 		print("Test Harness:Upgrade Switches listed in second argument")
 
