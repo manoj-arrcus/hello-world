@@ -24,7 +24,8 @@ if sys.argv > 1:
 				fw.write(line)
 		fp.close()
 		fw.close()
-		os.system("./netconf-console --host {} --port 830 -u root -p arrcus --rpc upgrade_onl.xml".format(host_ip))
+		#os.system("./netconf-console --host {} --port 830 -u root -p arrcus --rpc upgrade_onl.xml".format(host_ip))
+		os.system("pwd")
 		print("Test Harness:Upgrade Switches listed in second argument")
 
 	if sys.argv[1].find('TH-Regression') >= 0:
